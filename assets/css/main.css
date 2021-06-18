@@ -1981,6 +1981,8 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
+		display: flex;
+		justify-content: center;
 		background-color: #800080;
 		text-align: center;
 		position: fixed;
@@ -2026,7 +2028,24 @@ input, select, textarea {
 				color: #fff !important;
 				background: #4B0082;
 			}
-
+			/* Adding icons in menu bar */
+			.menu__icons{
+				min-width: 20%;
+				display: flex;
+				font-weight: bold;
+				color:#fff;
+				text-shadow: 0px 0px 3px #000;
+				align-items: center;
+			}
+			.menu__icons:first-child{
+				justify-content: flex-end;
+			}			.menu__icons:last-child{
+				justify-content: flex-start;
+			}
+			.menu__icons > img{
+				height: 36px;	
+				cursor: pointer;
+			}
 
 
 				#nav a.active:before {
